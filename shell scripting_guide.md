@@ -139,7 +139,8 @@ In the above array, there is `r`, which is the third element of the array named 
 ```bash
 unset arr[2]
 ```
-**Usage: **
+
+**Usage:**
 ```bash
 unset <array name if you want to drop an array or index of an array>
 ```
