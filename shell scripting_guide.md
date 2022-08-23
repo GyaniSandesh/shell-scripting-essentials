@@ -156,6 +156,7 @@ ${#string_variable_name}
 ```
 
 After assigning value to the variable, you can normally print it out using `echo`.
+
 Some special bash variable:
 
 | command | use |
@@ -191,7 +192,10 @@ else
   echo "Executing else statement"
 fi
 ```
-In you are familier with other programming language, then we use `>` or `<` to check whether something is greater or lesser. In bash, we use 
+In you are familier with other programming language, then we use `>` or `<` to check whether something is greater or lesser. 
+
+In bash, we use 
+
 | operator | use |
 | --- | --- |
 |`-lt`| less than |
