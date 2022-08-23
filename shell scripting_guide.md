@@ -69,8 +69,11 @@ Or you can even do this as well:
 
 ## Printing variable
 Till now so far, we have seen the way of declearing and undeclearing variable. So, let's see how we can print the value of variable:
-Syntax:
+
+**Syntax**:
+
 `echo "${variable_name}" or echo "$variable_name"`
+
 However, if you replace double quotes with single quotes, then you are not going to see the value of variable printed in your terminal but instead you will it's name with $ sign get printed.
 
 ## Comments
