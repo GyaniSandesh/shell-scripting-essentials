@@ -291,7 +291,7 @@ function_name() {
 ```bash
 function_name
 ```
-**But while calling the function, you are not allowed to use parenthesis**
+**Note: But while calling the function, you are not allowed to use parenthesis**
 
 I hope that after coming up to this point, you are well familier with bash and now you will be capable of creating your own great bash programs to do your time consuming and boring jobs.
 
