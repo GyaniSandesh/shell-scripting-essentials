@@ -20,9 +20,11 @@ Let's say, I am currently logged in as a zsh shell user in my terminal and I can
 `#!/bin/bash` :  This is called shebang(only #!) and `/bin/bash` is written in order to indicate that we are trying to use bash interpreter. If we are trying to use zsh interpreter, we should mention `/bin/zsh` after shebang.
 Make sure to mention the shebang and interpreter at the first line of your script.
 
-##Displaying output in your terminal 
+## Displaying output in your terminal 
+
 `echo "Hello Sandesh"`
 `echo "Hello I am displaying this " ; echo "In a new line"`
+
 You will notice that after you wrote`;`, second command is going to be displayed in a new line.
 
 ## Running script with executable permission
@@ -32,15 +34,18 @@ You can do so just like:
 
 *Note:  `..`means parent directory whereas `.` means current directory and we are trying to run `filename.sh` file present in our current directory thus we wrote single dot at the beginning.*
 
-##Running script without providing executable permission
+## Running script without providing executable permission
 Let's say you had created a file name `a.sh` and you can directly run it using `bash a.sh` or `zsh a.sh` or `ksh a.sh`. This concluded that writing the name of the shell and mentioning the file name will directly run the scripting file and it don't need any exexcutable permission as well but if you are trying to run like `bash a.sh`, make sure to provide the bash interpreter after the **shebang line**.
 
-##Exporting the path and run:
+## Exporting the path and run:
 Let's say I have all of my scripts inside `script` directory situated inside `/home/user/Documents/`. So, I can specify the path of my shell script and I can just write `<filename>.sh` instead of giving executable permissions and this is how you can specify the path:
 `export PATH:$PATH:/home/user/Documents/script`
 
-#Variables in shell scripting:
-##Declaring variable in bash:
+# Variables in shell scripting:
+
+
+## Declaring variable in bash:
+
 While declaring the variable in bash, it don't care about the datatypes. You can declare the variable in bash as:
 Syntax:
 `variable_name="value"`
@@ -51,7 +56,8 @@ And also, you can use that same variable name to declare the integer or float va
 **unset var**: Dropping it's value 'Sandesh' from the above case
 You can delete the value of variable using `unset` keyword. It can not only delete the value of variable, but also can drop the value from an array as well which we are going to later in this course.
 
-##Declaring constant variable:
+## Declaring constant variable:
+
 `readonly b='Sand'`
 Here, in order to declare constant variable, you will need to use readonly keyword
 While declaring variable, you can even assign the value of variable to the linux command which is commonly known as command substitution. Just look at the given example and identify it:
@@ -66,10 +72,12 @@ Syntax:
 However, if you replace double quotes with single quotes, then you are not going to see the value of variable printed in your terminal but instead you will it's name with $ sign get printed.
 
 ## Comments
+
 For comment(Which is the piece of line that is ignored by the interpreter of bash), you use #
 > "#" will not be executed as this is comment as I had added "#" at the first 
 
-##User input in bash
+## User input in bash
+
     #echo "Enter anything and then it will be stored in a variable situated below this line."
     read a
     echo "You entered $a"
@@ -79,7 +87,8 @@ Another way of doing so:
 	   
 In the above line, `-p` is used to get user prompt in the same line where it asks for your prompt and to store it in the variable named mood
 
-##Passing multiple value to different variable:
+## Passing multiple value to different variable:
+
 Here is a simple bash program that takes name, surname, age of a person:
 ```bash
 echo "Enter your name, surname, and age:"
@@ -88,7 +97,8 @@ echo "Enter your name, surname, and age:"
 ```
 
 
-##Array in bash:
+## Array in bash:
+
 Basically, array can be defined as the sequence of characters.
 ```bash
 arr=("hello","how","r","are","you")
@@ -119,15 +129,15 @@ Some special bash variable:
 
 | command | use |
 | --- | --- |
-| $0  |name of bash script|
-| $n |  bash script arguments  {where, n can be any number} | 
-| $? | exit status of last executed command  |
-| $@  | value of all arguments passed to the scripts  |
-|$$   |  process id of the current shell |
-|  $# |  number of arguments passed to the scripts |
+| $0 | name of bash script |
+| $n | bash script arguments  {where, n can be any number} | 
+| $? | exit status of last executed command |
+| $@ | value of all arguments passed to the scripts |
+| $$ | process id of the current shell |
+| $# | number of arguments passed to the scripts |
 
 
-##If else or decision making statement in bash:
+## If else or decision making statement in bash:
 **Syntax:**
 ```bash
 if [ condition ];
@@ -160,7 +170,7 @@ In you are familier with other programming language, then we use `>` or `<` to c
 **Bonus tip:** 
 *Might be harder to remember right, you can just write the command `man test` and there is a manual page for you. You don't need to remember any more.*
 
-##Case statement in bash
+## Case statement in bash
 ```bash
 echo "Enter your number"
 read n
@@ -176,7 +186,7 @@ case $n in
 esac
 ```
 
-##Loop in shell scripting
+## Loop in shell scripting
 Basically, loop can be defined as the process of doing something repedeately. 
 
 Let us say you are about to create about 100 users and insert their contact details and insert into the database which is quite time consuming right? What can be the alternative for that? Well, loop is there to help you at such conditions which can do you job within some minutes of count. 
@@ -223,7 +233,7 @@ until [ condition ]; do
 done
 ```
 
-##Functions:
+## Functions:
 Usually, the idea of function is same as the idea of loop which is to deduct the code reusability but it is a bit different from that of loop.
 **Ways of declearing Functions**
 1. ```bash
