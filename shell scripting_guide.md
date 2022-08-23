@@ -28,7 +28,7 @@ echo "Hello Sandesh"
 echo "Hello I am displaying this " ; echo "In a new line"
 ```
 
-You will notice that after you wrote`;`, second command is going to be displayed in a new line.
+You will notice that after you wrote `;`, second command is going to be displayed in a new line.
 
 ## Running script with executable permission
 You create a shell script file with an extension of `sh` at the end and in order to run it, there are several methods. One of the method of doing so is by allowing the executable permission to the script and running it.
@@ -37,7 +37,7 @@ You can do so just like:
 chmod +x filename.sh ; ./filename.sh
 ```
 
-*Note:  `..`means parent directory whereas `.` means current directory and we are trying to run `filename.sh` file present in our current directory thus we wrote single dot at the beginning.*
+*Note: `..` means parent directory whereas `.` means current directory and we are trying to run `filename.sh` file present in our current directory thus we wrote single dot at the beginning.*
 
 ## Running script without providing executable permission
 Let's say you had created a file name `a.sh` and you can directly run it using `bash a.sh` or `zsh a.sh` or `ksh a.sh`. This concluded that writing the name of the shell and mentioning the file name will directly run the scripting file and it don't need any exexcutable permission as well but if you are trying to run like `bash a.sh`, make sure to provide the bash interpreter after the **shebang line**.
@@ -191,11 +191,14 @@ else
 fi
 ```
 In you are familier with other programming language, then we use `>` or `<` to check whether something is greater or lesser. In bash, we use 
-`-lt`  indicates less than, 
-`-gt` indicates greater than,
- `-le` indicates less than and equal to, 
-`-ge` indicates greater than and equal  
-`-ne` and `-eq` indicates not equal to and not equal to.
+| operator | use |
+| --- | --- |
+|`-lt`| less than |
+|`-gt`| greater than |
+|`-le`| less than and equal to |
+|`-ge`| greater than and equal |
+|`-ne`| not equal to |
+|`-eq`| equal to |
 
 **Bonus tip:** 
 *Might be harder to remember right, you can just write the command `man test` and there is a manual page for you. You don't need to remember any more.*
