@@ -22,16 +22,20 @@ Make sure to mention the shebang and interpreter at the first line of your scrip
 
 ## Displaying output in your terminal 
 
-`echo "Hello Sandesh"`
+```bash
+echo "Hello Sandesh"
 
-`echo "Hello I am displaying this " ; echo "In a new line"`
+echo "Hello I am displaying this " ; echo "In a new line"
+```
 
 You will notice that after you wrote`;`, second command is going to be displayed in a new line.
 
 ## Running script with executable permission
 You create a shell script file with an extension of `sh` at the end and in order to run it, there are several methods. One of the method of doing so is by allowing the executable permission to the script and running it.
 You can do so just like:
-`chmod +x filename.sh ; ./filename.sh`
+```bash
+chmod +x filename.sh ; ./filename.sh
+```
 
 *Note:  `..`means parent directory whereas `.` means current directory and we are trying to run `filename.sh` file present in our current directory thus we wrote single dot at the beginning.*
 
@@ -41,7 +45,9 @@ Let's say you had created a file name `a.sh` and you can directly run it using `
 ## Exporting the path and run:
 Let's say I have all of my scripts inside `script` directory situated inside `/home/user/Documents/`. So, I can specify the path of my shell script and I can just write `<filename>.sh` instead of giving executable permissions and this is how you can specify the path:
 
-`export PATH:$PATH:/home/user/Documents/script`
+```bash
+export PATH:$PATH:/home/user/Documents/script
+```
 
 # Variables in shell scripting:
 
@@ -50,9 +56,15 @@ Let's say I have all of my scripts inside `script` directory situated inside `/h
 
 While declaring the variable in bash, it don't care about the datatypes. You can declare the variable in bash as:
 Syntax:
-`variable_name="value"`
+```bash
+variable_name="value"
+```
+
 For an example,
-`var='Sandesh'`
+```bash
+var='Sandesh'
+```
+
 And also, you can use that same variable name to declare the integer or float value but it's value is going to be modified. But, make sure to avoid spaces before and after '=' otherwise it is going to throw you an error. However, spaces are mandatory before and after "=" sign only. On the other hand, don't give spaces while giving the variable name rather use underscore(_).
 
 **unset var**: Dropping it's value 'Sandesh' from the above case
@@ -60,19 +72,29 @@ You can delete the value of variable using `unset` keyword. It can not only dele
 
 ## Declaring constant variable:
 
-`readonly b='Sand'`
+```bash
+readonly b='Sand'
+```
+
 Here, in order to declare constant variable, you will need to use readonly keyword
 While declaring variable, you can even assign the value of variable to the linux command which is commonly known as command substitution. Just look at the given example and identify it:
-`dsk='lsblk'`
+```bash
+dsk='lsblk'
+```
+
 Or you can even do this as well:
-`directory=$(pwd cd.. pwd)`
+```bash
+directory=$(pwd cd.. pwd)
+```
 
 ## Printing variable
 Till now so far, we have seen the way of declearing and undeclearing variable. So, let's see how we can print the value of variable:
 
 **Syntax**:
 
-`echo "${variable_name}" or echo "$variable_name"`
+```bash
+echo "${variable_name}" or echo "$variable_name"
+```
 
 However, if you replace double quotes with single quotes, then you are not going to see the value of variable printed in your terminal but instead you will it's name with $ sign get printed.
 
@@ -89,7 +111,9 @@ echo "You entered $a"
 ```
 
 Another way of doing so:
-       `echo -p "Are you fine? Reply me in either yes or no!" mood`
+```bash
+echo -p "Are you fine? Reply me in either yes or no!" mood
+```
 	   
 In the above line, `-p` is used to get user prompt in the same line where it asks for your prompt and to store it in the variable named mood
 
