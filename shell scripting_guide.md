@@ -23,6 +23,7 @@ Make sure to mention the shebang and interpreter at the first line of your scrip
 ## Displaying output in your terminal 
 
 `echo "Hello Sandesh"`
+
 `echo "Hello I am displaying this " ; echo "In a new line"`
 
 You will notice that after you wrote`;`, second command is going to be displayed in a new line.
@@ -39,6 +40,7 @@ Let's say you had created a file name `a.sh` and you can directly run it using `
 
 ## Exporting the path and run:
 Let's say I have all of my scripts inside `script` directory situated inside `/home/user/Documents/`. So, I can specify the path of my shell script and I can just write `<filename>.sh` instead of giving executable permissions and this is how you can specify the path:
+
 `export PATH:$PATH:/home/user/Documents/script`
 
 # Variables in shell scripting:
