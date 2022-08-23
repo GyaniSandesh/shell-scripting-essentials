@@ -240,15 +240,16 @@ done
 ```
 
 ## Functions:
+
 Usually, the idea of function is same as the idea of loop which is to deduct the code reusability but it is a bit different from that of loop.
+
 **Ways of declearing Functions**
-1. ```bash
- function function_name() {
+
+ ```bash
+function function_name() {
   rest is upon you[Means you need to write script inside that enclosed block]
 }
-```
 
-2. ```bash
 function_name() {
   rest is upon you[Means you need to write script inside that enclosed block]
 }
