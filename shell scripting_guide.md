@@ -82,10 +82,11 @@ For comment(Which is the piece of line that is ignored by the interpreter of bas
 > "#" will not be executed as this is comment as I had added "#" at the first 
 
 ## User input in bash
-
-    #echo "Enter anything and then it will be stored in a variable situated below this line."
-    read a
-    echo "You entered $a"
+```bash
+echo "Enter anything and then it will be stored in a variable situated below this line"
+read a
+echo "You entered $a"
+```
 
 Another way of doing so:
        `echo -p "Are you fine? Reply me in either yes or no!" mood`
@@ -97,8 +98,8 @@ In the above line, `-p` is used to get user prompt in the same line where it ask
 Here is a simple bash program that takes name, surname, age of a person:
 ```bash
 echo "Enter your name, surname, and age:"
- read nam thar umer
- echo "So, you are $nam $thar who is $umer years of old"
+read nam thar umer
+echo "So, you are $nam $thar who is $umer years of old"
 ```
 
 
@@ -217,8 +218,8 @@ for i in /opt/*; do
   echo "$i\n\n"
 done
 ```
-**
-While loop**
+
+**While loop**
  - Runs as long as the condition is true
 Syntax:
 ```bash
