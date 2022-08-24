@@ -1,6 +1,6 @@
 > Copyright (C) 2022 Sandesh Regmi
 The permission to modify, delete, copy, merge, publish and use is herbly allowed to any users but they should mention the above copyright line
-**Before starting, I hope you guys are clear with the basics of linux otherwise you can't utilize the power of shell script as efficiently.**
+**Before starting, I hope you guys are clear with the basics of linux otherwise you can't utilize the power of shell script efficiently.**
 
 ------------
 
